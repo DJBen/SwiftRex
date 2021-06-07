@@ -24,4 +24,7 @@ Pod::Spec.new do |s|
 
   s.source_files  = "Sources/SwiftRex/**/*.swift"
   s.framework  = "Foundation"
+
+  # This is used by TestingExtensions as @testable
+  s.pod_target_xcconfig = { 'ENABLED_TESTABILITY' => 'YES' }
 end
